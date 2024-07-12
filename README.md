@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Set up 
+  - Make sure you have ruby 3.3.3 and rails 7 installed
+  - bundle install
+  - rails db:create db:migrate
+  - setup secrets `bundle exec rails secret`
+  - #VSCode `EDITOR='code --wait' rails credentials:edit`
+    copy secret in as `devise_jwt_secret_key: key`
+  - rails s
 
-Things you may want to cover:
+ Concept can be located [here](https://medium.com/@johnverdone/the-fun-of-looking-for-work-51b5e5a41ddc)
 
-* Ruby version
+Todo:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Fully Set up users model
+- Contacts
+- Jobs
